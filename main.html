@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <!--can only handle single digit inputs right now-->
+    <div id="display"></div>
+    <button onclick="if(currentValue == null){ currentValue = 7; } currentFunction(7);">7</button>
+    <button onclick="if(currentValue == null){ currentValue = 8; } currentFunction(8);">8</button>
+    <button onclick="if(currentValue == null){ currentValue = 9; } currentFunction(9);">9</button>
+    <br>
+    <button onclick="if(currentValue == null){ currentValue = 4; } currentFunction(4);">4</button>
+    <button onclick="if(currentValue == null){ currentValue = 5; } currentFunction(5);">5</button>
+    <button onclick="if(currentValue == null){ currentValue = 6; } currentFunction(6);">6</button>
+    <br>
+    <button onclick="if(currentValue == null){ currentValue = 1; } currentFunction(1);">1</button>
+    <button onclick="if(currentValue == null){ currentValue = 2; } currentFunction(2);">2</button>
+    <button onclick="if(currentValue == null){ currentValue = 3; } currentFunction(3);">3</button>
+    <br>
+    <button onclick="if(currentValue == null){ currentValue = 0; } currentFunction(0);">0</button>
+    <br>
+    <button onclick="currentFunction = add;">+</button>
+    <button onclick="currentFunction = subtract;">-</button>
+    <button onclick="currentFunction = multiply;">*</button>
+    <button onclick="currentFunction = divide;">/</button>
+    <br>
+    <button onclick="document.getElementById(&quot;display&quot;).innerHTML = currentValue;">=</button>
+    <br>
+    <button onclick="currentValue = null; currentFunction = null; document.getElementById(&quot;display&quot;).innerHTML = &quot;&quot;;">Clear</button>
+</body>
+</html>
